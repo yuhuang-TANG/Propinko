@@ -3,7 +3,7 @@ package com.example.tangyuhuang.propinko;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class InscriptionActivity extends AppCompatActivity {
+public class Inscription extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
