@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Propinko</string>
+    <string name="jeCherche">Je cherche</string>
+    <string name="jeDepose">Je dépose</string>
+    <string name="civilite">Civilité</string>
+    <string name="title_activity_connexion">Je dépose</string>
+    <string name="title_activity_tableau_du_bord">Je dépose</string>
+    <string name="title_activity_annonces">Je dépose</string>
+    <string name="title_activity_compte">Je dépose</string>
+    <string name="title_activity_gerer_compte">Je dépose</string>
+    <string name="title_activity_change_password">Je dépose</string>
+    <string name="title_activity_message_reussi">Je dépose</string>
+    <string name="title_activity_depot_annonce1">Je dépose</string>
+    <string name="title_activity_depot_annonce2">Je dépose</string>
+    <string name="title_activity_annonce_infos">Je dépose</string>
+    <string name="title_activity_annonce_dispos">Je dépose</string>
+    <string name="title_activity_annonce_tarifs_et_photos">Je dépose</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Connexion</string>
+    <string name="error_invalid_email">Le adresse mail est invalid !</string>
+    <string name="error_invalid_password">Le mot de passe est très court (au moins 4 lettres) !</string>
+    <string name="error_incorrect_password">Le mot de passe est incorrect !</string>
+    <string name="error_field_required">Ce champ est obligatoire !</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="categorie">Categorie *</string>
+
+    <!-- Strings Thaïs -->
+    <string name="name">Nom *:</string>
+    <string name="email">Adresse e-mail *:</string>
+    <string name="phone">Téléphone :</string>
+    <string name="Text">Texte *:</string>
+    <string name="Message">Remplissez cet espace. L item ne peut pas etre vide. </string>
+    <string name="title_activity_email_envoye">email_envoye</string>
+    <string name="Envoye">Votre email a bien été envoyé au fornisseur. Il vous contactera par email ou portable. Merci d avoir attendu pour sa réponse."</string>
+    <string name="Click">Click Ok pour revenir à la page Descriptions.</string>
+    <string name="title_activity_materiel">Materiel</string>
+    <string name="title_activity_JeCherche">Je Cherche</string>
+    <string name="title_activity_annonce">Annonce</string>
+    <string name="title_activity_disponibilites">Disponibilites</string>
+    <string name="Descriptions">Descriptions</string>
+    <string name="Tarifs">Tarifs</string>
+    <string name="title_activity_an">An</string>
+    <string name="Disponibilites">Disponibilites</string>
+
+</resources>

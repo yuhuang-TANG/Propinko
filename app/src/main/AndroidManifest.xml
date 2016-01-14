@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tangyuhuang.propinko" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_propinko"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="MyApplication" >
+        <activity android:name=".Welcome"
+                  android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main" >
+        </activity>
+        <activity
+            android:name=".Connexion"
+            android:label="@string/title_activity_connexion" >
+        </activity>
+        <activity
+            android:name=".TableauDuBord"
+            android:label="@string/title_activity_tableau_du_bord"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Annonces"
+            android:label="@string/title_activity_annonces"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Compte"
+            android:label="@string/title_activity_compte"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MessageReussi"
+            android:label="@string/title_activity_message_reussi" >
+        </activity>
+        <activity
+            android:name=".DepotAnnonce"
+            android:label="@string/title_activity_depot_annonce2" >
+        </activity>
+        <activity
+            android:name=".GererCompte"
+            android:label="@string/title_activity_gerer_compte" >
+        </activity>
+        <activity
+            android:name=".AnnonceInfos"
+            android:label="@string/title_activity_annonce_infos" >
+        </activity>
+        <activity
+            android:name=".AnnonceDispos"
+            android:label="@string/title_activity_annonce_dispos" >
+        </activity>
+        <activity
+            android:name=".AnnonceTarifsEtPhotos"
+            android:label="@string/title_activity_annonce_tarifs_et_photos" >
+        </activity>
+        <activity
+            android:name=".SearchProducts">
+        </activity>
+        <activity
+            android:name=".Envoyer_email" >
+        </activity>
+        <activity
+            android:name=".JeCherche" >
+        </activity>
+        <activity
+            android:name=".Annonce" >
+        </activity>
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

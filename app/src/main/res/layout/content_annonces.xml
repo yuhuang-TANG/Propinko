@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_annonces"
+    tools:context="com.example.tangyuhuang.propinko.Annonces"
+    android:background="#f4f7f4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/parentSvAnnonces" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout2"
+            android:weightSum="1">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="410dp"
+                android:id="@+id/lvAnnonces"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/btnDeposeAnnonces"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:textColor="#54d954"
+                android:layout_gravity="center_horizontal"
+                style="@android:style/Widget.Button"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lvAnnonces" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvValueNombreDeAnnonces"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

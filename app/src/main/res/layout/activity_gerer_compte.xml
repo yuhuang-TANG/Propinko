@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tangyuhuang.propinko.GererCompte">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svGererCompte"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout4"
+            android:layout_alignParentStart="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modification de vos informations"
+                android:id="@+id/tvInfosGererCompte"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                style="@style/eneditable"
+                android:id="@+id/etValueEmailGererCompte"
+                android:editable="false" />
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerValueCiviliteGererCompte"
+                android:background="#cafcb9"
+                android:prompt="@string/civilite"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/etValueEmailGererCompte"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <AutoCompleteTextView
+                style="@android:style/Widget.EditText"
+                android:id="@+id/prenomValueGererCompte"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="#cafcb9"
+                android:minHeight="50dp"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_above="@+id/tvTelephoneParDefautGererCompte"
+                android:layout_centerHorizontal="true" />
+
+            <AutoCompleteTextView
+                style="@android:style/Widget.EditText"
+                android:id="@+id/nomValueGererCompte"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="#cafcb9"
+                android:minHeight="50dp"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_alignTop="@+id/prenomValueGererCompte"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Téléphone par défaut :"
+                android:id="@+id/tvTelephoneParDefautGererCompte"
+                android:layout_below="@+id/spinnerValueCiviliteGererCompte"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                style="Widget.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/etValueTelephoneParDefautGererCompte"
+                android:layout_below="@+id/tvTelephoneParDefautGererCompte"
+                android:layout_alignParentStart="true"
+                android:background="#cafcb9"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse :"
+                android:id="@+id/tvAdresseGererCompte"
+                android:layout_below="@+id/etValueTelephoneParDefautGererCompte"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvAdresseGererCompte"
+                android:id="@+id/rlAdresseGererCompte">
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/etValueNumeroDeRueGererCompte"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/etValueNomDeRueGererCompte"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/etValueNumeroDeRueGererCompte" />
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/etValueCodePostaleGererCompte"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/etValueNumeroDeRueGererCompte"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/etValueVilleGererCompte" />
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/etValueVilleGererCompte"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/etValueNumeroDeRueGererCompte"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/etValueNumeroDeRueGererCompte" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quelques mots sur vous :"
+                android:id="@+id/tvMotSurVousGererCompte"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:layout_toStartOf="@+id/prenomValueGererCompte"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/rlAdresseGererCompte" />
+
+            <EditText
+                style="Widget.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/etValueMotSurVousGererCompte"
+                android:layout_below="@+id/tvMotSurVousGererCompte"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:background="#cafcb9" />
+
+            <Button
+                style="@android:style/Widget.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enregistrer"
+                android:id="@+id/btnEnregistrerGererCompte"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/etValueMotSurVousGererCompte" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEndGererCompte"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="440dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

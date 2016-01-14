@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tangyuhuang.propinko.AnnonceInfos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svAnnonceInfos"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout4"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvValueTitreAnnonceInfos"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/btnDispoAnnonceInfos"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Informations"
+                    android:id="@+id/btnInfosAonnceInfos"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Disponibilités"
+                    android:id="@+id/btnDispoAnnonceInfos"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    style="@android:style/Widget.Button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tarifs et photos"
+                    android:id="@+id/btnTarifEtPhotoAnnonceInfos"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titre : "
+                android:id="@+id/tvTitreAnnonceInfos"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/etValueTitreAnnonceInfos"
+                android:layout_marginTop="10dp"
+                android:background="#cafcb9"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie : "
+                android:id="@+id/tvCategorieAnnonceInfos"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerValueCategorieAnnonceInfos"
+                android:prompt="@string/categorie"
+                android:background="#cafcb9"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse : "
+                android:id="@+id/tvAdresseAnnonceInfos"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/etValueRueAnnonceInfos"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text" />
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/etValueCodePostaleAnnonceInfos"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignStart="@id/etValueRueAnnonceInfos"
+                    android:layout_below="@+id/etValueRueAnnonceInfos"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/etValueVilleAnnonceInfos"
+                    android:background="#cafcb9"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/etValueRueAnnonceInfos"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Téléphone : "
+                android:id="@+id/tvTelephoneAnnonceInfos"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/etValueTelephoneAnnonceInfos"
+                android:background="#cafcb9"
+                android:textSize="15dp"
+                android:layout_below="@+id/etVilleDepotAnnonce1"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/etVilleDepotAnnonce1"
+                android:layout_alignEnd="@+id/etVilleDepotAnnonce1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description : "
+                android:id="@+id/tvDescriptionAnnonceInfos"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                style="@android:style/Widget.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/etValueDescriptionAnnonceInfos"
+                android:background="#cafcb9"
+                android:textSize="15dp"
+                android:layout_below="@+id/etTelephoneDepotAnnonce1"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/etTelephoneDepotAnnonce1"
+                android:layout_alignEnd="@+id/etTelephoneDepotAnnonce1" />
+
+            <Button
+                style="@android:style/Widget.Button"
+                android:id="@+id/btnEnregistrerAnnonceInfos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enregistrez les modifications"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etDescriptionDepotAnnonce1"
+                android:layout_alignStart="@+id/etDescriptionDepotAnnonce1"
+                android:layout_alignEnd="@+id/etDescriptionDepotAnnonce1"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
