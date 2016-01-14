@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PartieJeDepose;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -24,7 +24,8 @@ import org.json.JSONObject;
 
 
 import android.os.AsyncTask;
-import android.widget.Toast;
+
+import com.example.tangyuhuang.propinko.R;
 
 import java.io.IOException;
 import java.io.InputStream;

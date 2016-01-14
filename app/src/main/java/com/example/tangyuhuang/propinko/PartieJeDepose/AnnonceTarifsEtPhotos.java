@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PartieJeDepose;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,7 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class AnnonceInfos extends AppCompatActivity {
+import com.example.tangyuhuang.propinko.PartieJeDepose.AnnonceDispos;
+import com.example.tangyuhuang.propinko.PartieJeDepose.AnnonceInfos;
+import com.example.tangyuhuang.propinko.PartieJeDepose.Annonces;
+import com.example.tangyuhuang.propinko.R;
+
+public class AnnonceTarifsEtPhotos extends AppCompatActivity {
 
     String ownerId;
     String mail;
@@ -18,16 +23,17 @@ public class AnnonceInfos extends AppCompatActivity {
     String accountDate;
     String etat;
 
-    TextView tvValueTitreAnnonceInfos;
+    TextView tvValueTitreAnnonceTarifsEtPhotos;
 
-    Button btnDispoAnnonceInfos;
-    Button btnTarifEtPhotoAnnonceInfos;
-    Button btnEnregistrerAnnonceInfos;
+    Button btnInfoAnnonceTarifsEtPhotos;
+    Button btnDispoAnnonceTarifsEtPhotos;
+    Button btnAjouterTarifAnnonceTarifsEtPhotos;
+    Button btnAjouterPhotoAnnonceTarifsEtPhotos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_annonce_infos);
+        setContentView(R.layout.activity_annonce_tarifs_et_photos);
 
         Intent intent = getIntent();
         ownerId = intent.getStringExtra("ownerId").toString();
@@ -36,38 +42,63 @@ public class AnnonceInfos extends AppCompatActivity {
         accountDate = intent.getStringExtra("accountDate").toString();
         etat = intent.getStringExtra("etat").toString();
 
-        tvValueTitreAnnonceInfos = (TextView) findViewById(R.id.tvValueTitreAnnonceInfos);
-        tvValueTitreAnnonceInfos.setText(intent.getStringExtra("TitreDeAnnonce"));
+        tvValueTitreAnnonceTarifsEtPhotos = (TextView) findViewById(R.id.tvValueTitreAnnonceTarifsEtPhotos);
+        tvValueTitreAnnonceTarifsEtPhotos.setText(intent.getStringExtra("TitreDeAnnonce"));
 
-        btnDispoAnnonceInfos = (Button) findViewById(R.id.btnDispoAnnonceInfos);
-        btnDispoAnnonceInfos.setOnClickListener(new View.OnClickListener() {
+        btnInfoAnnonceTarifsEtPhotos = (Button) findViewById(R.id.btnInfoAnnonceTarifsEtPhotos);
+        btnInfoAnnonceTarifsEtPhotos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                allerPageAnnonceInfos();
+            }
+        });
+
+        btnDispoAnnonceTarifsEtPhotos = (Button) findViewById(R.id.btnDispoAnnonceTarifsEtPhotos);
+        btnDispoAnnonceTarifsEtPhotos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 allerPageAnnonceDispos();
             }
         });
 
-        btnTarifEtPhotoAnnonceInfos = (Button) findViewById(R.id.btnTarifEtPhotoAnnonceInfos);
-        btnTarifEtPhotoAnnonceInfos.setOnClickListener(new View.OnClickListener() {
+        btnAjouterTarifAnnonceTarifsEtPhotos = (Button) findViewById(R.id.btnAjouterTarifAnnonceTarifsEtPhotos);
+        btnAjouterTarifAnnonceTarifsEtPhotos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                allerPageAnnonceTatifsEtPhotos();
+                ajouterTarif();
             }
         });
 
-        btnEnregistrerAnnonceInfos = (Button) findViewById(R.id.btnEnregistrerAnnonceInfos);
-        btnEnregistrerAnnonceInfos.setOnClickListener(new View.OnClickListener() {
+        btnAjouterPhotoAnnonceTarifsEtPhotos = (Button) findViewById(R.id.btnAjouterPhotoAnnonceTarifsEtPhotos);
+        btnAjouterPhotoAnnonceTarifsEtPhotos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                modifierInfosAnnonce();
+                ajouterPhoto();
             }
         });
 
     }
 
-    private void modifierInfosAnnonce(){
+    private void ajouterTarif(){
 
-        //TODO write the code for modifier the informations of the annonce
+        //TODO write the code for add a price
+    }
+
+    private void ajouterPhoto(){
+
+        //TODO write the code for add a photo
+    }
+
+    private void allerPageAnnonceInfos(){
+        finish();
+        Intent monIntent = new Intent(this, AnnonceInfos.class);
+        monIntent.putExtra("ownerId",ownerId);
+        monIntent.putExtra("mail", mail);
+        monIntent.putExtra("password", password);
+        monIntent.putExtra("accountDate",accountDate);
+        monIntent.putExtra("etat",etat);
+        monIntent.putExtra("TitreDeAnnonce",tvValueTitreAnnonceTarifsEtPhotos.getText().toString());
+        startActivity(monIntent);
     }
 
     private void allerPageAnnonceDispos(){
@@ -78,19 +109,7 @@ public class AnnonceInfos extends AppCompatActivity {
         monIntent.putExtra("password", password);
         monIntent.putExtra("accountDate",accountDate);
         monIntent.putExtra("etat",etat);
-        monIntent.putExtra("TitreDeAnnonce",tvValueTitreAnnonceInfos.getText().toString());
-        startActivity(monIntent);
-    }
-
-    private void allerPageAnnonceTatifsEtPhotos(){
-        finish();
-        Intent monIntent = new Intent(this, AnnonceTarifsEtPhotos.class);
-        monIntent.putExtra("ownerId",ownerId);
-        monIntent.putExtra("mail", mail);
-        monIntent.putExtra("password", password);
-        monIntent.putExtra("accountDate",accountDate);
-        monIntent.putExtra("etat",etat);
-        monIntent.putExtra("TitreDeAnnonce",tvValueTitreAnnonceInfos.getText().toString());
+        monIntent.putExtra("TitreDeAnnonce",tvValueTitreAnnonceTarifsEtPhotos.getText().toString());
         startActivity(monIntent);
     }
 

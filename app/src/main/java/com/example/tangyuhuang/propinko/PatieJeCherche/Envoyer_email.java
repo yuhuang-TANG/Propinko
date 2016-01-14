@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PatieJeCherche;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.tangyuhuang.propinko.R;
 
 
 public class Envoyer_email extends ActionBarActivity {

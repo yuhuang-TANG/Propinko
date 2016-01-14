@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PartieJeDepose;
 
 
 import android.content.Intent;
@@ -8,6 +8,10 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.tangyuhuang.propinko.PartieJeDepose.Annonces;
+import com.example.tangyuhuang.propinko.PartieJeDepose.Compte;
+import com.example.tangyuhuang.propinko.R;
 
 public class MessageReussi extends AppCompatActivity {
 

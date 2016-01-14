@@ -1,10 +1,12 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PatieJeCherche;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.widget.ImageView;
+
+import com.example.tangyuhuang.propinko.R;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,13 +1,13 @@
-package com.example.tangyuhuang.propinko.Class;
+package com.example.tangyuhuang.propinko.Model;
 
 /**
- * Created by TANG YUHUANG on 2016/1/7.
+ * Created by guillaumehoudayer on 16/12/15.
  */
 public class Product {
 
     private String id, name, category, ownerId, visibility, photoExtension, description, price;
 
-    Product(String id, String name, String category, String ownerId, String visibility, String photoExtension, String description, String price){
+    public Product(String id, String name, String category, String ownerId, String visibility, String photoExtension, String description, String price){
         this.id = id;
         this.name = name;
         this.category = category;
@@ -19,9 +19,9 @@ public class Product {
     }
 
     public String toString()
-    {
-        return id + "_" + name + "_" + category + "_" + ownerId + "_" + visibility + "_" + photoExtension + "_" + description + "_" +price;
-    }
+        {
+            return id + "_" + name + "_" + category + "_" + ownerId + "_" + visibility + "_" + photoExtension + "_" + description + "_" +price;
+        }
 
     public String getId(){
         return id;
@@ -56,5 +56,3 @@ public class Product {
     }
 
 }
-
-

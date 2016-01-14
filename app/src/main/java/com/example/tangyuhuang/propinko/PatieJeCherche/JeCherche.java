@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PatieJeCherche;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
+
+import com.example.tangyuhuang.propinko.Model.Product;
+import com.example.tangyuhuang.propinko.R;
 
 import java.util.ArrayList;
 

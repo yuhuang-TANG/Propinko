@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.Model;
 
 /**
  * Created by Thais on 17/12/2015.
@@ -7,7 +7,7 @@ public class Owner {
 
     private String id, lastname, mail, defaultPhone, password, firstname, description, streetNumber, adress, city, postalCode, civility, accountDate;
 
-    Owner(String id, String lastname, String mail, String defaultPhone, String password, String firstname, String description, String streetNumber, String adress, String city, String postalCode, String civility, String accountDate){
+    public Owner(String id, String lastname, String mail, String defaultPhone, String password, String firstname, String description, String streetNumber, String adress, String city, String postalCode, String civility, String accountDate){
         this.id = id;
         this.lastname = lastname;
         this.mail = mail;
@@ -60,6 +60,7 @@ public class Owner {
     public String getStreetNumber(){
         return streetNumber;
     }
+
     public String getAdress(){
         return adress;
     }

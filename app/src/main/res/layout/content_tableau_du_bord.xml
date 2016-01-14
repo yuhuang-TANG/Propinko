@@ -8,7 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_tableau_du_bord"
-    tools:context="com.example.tangyuhuang.propinko.TableauDuBord"
+    tools:context=".PartieJeDepose.TableauDuBord"
     android:background="#f4f7f4">
 
     <ScrollView

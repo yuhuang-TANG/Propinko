@@ -1,7 +1,9 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PartieJeDepose;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.tangyuhuang.propinko.R;
 
 public class Inscription extends AppCompatActivity {
 

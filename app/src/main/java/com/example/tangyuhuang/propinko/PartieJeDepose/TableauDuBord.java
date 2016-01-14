@@ -1,7 +1,6 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PartieJeDepose;
 
 import android.app.AlertDialog;
-import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -20,7 +19,13 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Button;
-import android.widget.Toast;
+
+import com.example.tangyuhuang.propinko.MyApplication;
+import com.example.tangyuhuang.propinko.PartieJeDepose.Annonces;
+import com.example.tangyuhuang.propinko.PartieJeDepose.Compte;
+import com.example.tangyuhuang.propinko.PartieJeDepose.Connexion;
+import com.example.tangyuhuang.propinko.PartieJeDepose.DepotAnnonce;
+import com.example.tangyuhuang.propinko.R;
 
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
@@ -30,7 +35,6 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.text.SimpleDateFormat;
 
 
 public class TableauDuBord extends AppCompatActivity

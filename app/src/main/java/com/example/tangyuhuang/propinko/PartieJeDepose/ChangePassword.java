@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PartieJeDepose;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.view.KeyEvent;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tangyuhuang.propinko.R;
 
 import org.apache.commons.io.IOUtils;
 

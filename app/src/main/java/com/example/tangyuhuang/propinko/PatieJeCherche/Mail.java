@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PatieJeCherche;
 
 import java.util.Date;
 import java.util.Properties;

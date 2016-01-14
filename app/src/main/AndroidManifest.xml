@@ -38,46 +38,46 @@
         </activity>
         <activity android:name=".Main"></activity>
         <activity
-            android:name=".Connexion"
+            android:name=".PartieJeDepose.Connexion"
             android:label="@string/title_activity_connexion"></activity>
         <activity
-            android:name=".TableauDuBord"
+            android:name=".PartieJeDepose.TableauDuBord"
             android:label="@string/title_activity_tableau_du_bord"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Annonces"
+            android:name=".PartieJeDepose.Annonces"
             android:label="@string/title_activity_annonces"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Compte"
+            android:name=".PartieJeDepose.Compte"
             android:label="@string/title_activity_compte"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".ChangePassword"
+            android:name=".PartieJeDepose.ChangePassword"
             android:label="@string/title_activity_change_password"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".MessageReussi"
+            android:name=".PartieJeDepose.MessageReussi"
             android:label="@string/title_activity_message_reussi"></activity>
         <activity
-            android:name=".DepotAnnonce"
+            android:name=".PartieJeDepose.DepotAnnonce"
             android:label="@string/title_activity_depot_annonce2"></activity>
         <activity
-            android:name=".GererCompte"
+            android:name=".PartieJeDepose.GererCompte"
             android:label="@string/title_activity_gerer_compte"></activity>
         <activity
-            android:name=".AnnonceInfos"
+            android:name=".PartieJeDepose.AnnonceInfos"
             android:label="@string/title_activity_annonce_infos"></activity>
         <activity
-            android:name=".AnnonceDispos"
+            android:name=".PartieJeDepose.AnnonceDispos"
             android:label="@string/title_activity_annonce_dispos"></activity>
         <activity
-            android:name=".AnnonceTarifsEtPhotos"
+            android:name=".PartieJeDepose.AnnonceTarifsEtPhotos"
             android:label="@string/title_activity_annonce_tarifs_et_photos"></activity>
-        <activity android:name=".SearchProducts"></activity>
-        <activity android:name=".Envoyer_email"></activity>
-        <activity android:name=".JeCherche"></activity>
-        <activity android:name=".Annonce"></activity>
+        <activity android:name=".PatieJeCherche.SearchProducts"></activity>
+        <activity android:name=".PatieJeCherche.Envoyer_email"></activity>
+        <activity android:name=".PatieJeCherche.JeCherche"></activity>
+        <activity android:name=".PatieJeCherche.Annonce"></activity>
 
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -87,7 +87,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Inscription"></activity>
+        <activity android:name=".PartieJeDepose.Inscription"></activity>
     </application>
 
 </manifest>

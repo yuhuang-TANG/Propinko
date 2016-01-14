@@ -1,4 +1,4 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PatieJeCherche;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -14,6 +14,10 @@ import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tangyuhuang.propinko.Model.Owner;
+import com.example.tangyuhuang.propinko.Model.Product;
+import com.example.tangyuhuang.propinko.R;
 
 import java.io.InputStream;
 

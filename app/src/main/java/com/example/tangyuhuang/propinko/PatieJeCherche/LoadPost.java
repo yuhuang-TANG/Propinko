@@ -1,6 +1,9 @@
-package com.example.tangyuhuang.propinko;
+package com.example.tangyuhuang.propinko.PatieJeCherche;
 
 import android.util.Log;
+
+import com.example.tangyuhuang.propinko.Model.Owner;
+import com.example.tangyuhuang.propinko.Model.Product;
 
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
@@ -67,7 +70,7 @@ public class LoadPost {
 
         return null;
     }
-    public com.example.tangyuhuang.propinko.Owner loadOwner(Post post){
+    public Owner loadOwner(Post post){
 
         try {
             HttpURLConnection c = (HttpURLConnection) (new URL(post.getUrl())).openConnection();
@@ -82,11 +85,11 @@ public class LoadPost {
             InputStream is = c.getInputStream();
 
             String r = IOUtils.toString(is);
-            com.example.tangyuhuang.propinko.Owner owner = null;
+            Owner owner = null;
 
             try{
                 JSONObject o = new JSONObject (r);
-                owner = new com.example.tangyuhuang.propinko.Owner(o.get("id").toString(),o.get("lastname").toString(),o.get("mail").toString(),o.get("defaultPhone").toString(),o.get("password").toString(),o.get("firstname").toString(),o.get("description").toString(),o.get("streetNumber").toString(),o.get("address").toString(),o.get("city").toString(),o.get("postalCode").toString(), o.get("civility").toString(),o.get("accountDate").toString());
+                owner = new Owner(o.get("id").toString(),o.get("lastname").toString(),o.get("mail").toString(),o.get("defaultPhone").toString(),o.get("password").toString(),o.get("firstname").toString(),o.get("description").toString(),o.get("streetNumber").toString(),o.get("address").toString(),o.get("city").toString(),o.get("postalCode").toString(), o.get("civility").toString(),o.get("accountDate").toString());
 
                 Log.i("search", "json ok");
 
